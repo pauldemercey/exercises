@@ -1,0 +1,52 @@
+[
+  {
+    "input": 0,
+    "expected": {
+      "output": {}
+    }
+  },
+  {
+    "input": 500,
+    "expected": {
+      "output": {
+        "500": 1
+      }
+    }
+  },
+  {
+    "input": "foo",
+    "expected": {
+      "error": "Number expected"
+    }
+  },
+  {
+    "input": -120,
+    "expected": {
+      "error": "Positive number expected"
+    }
+  },
+  {
+    "input": 1.001,
+    "expected": {
+      "error": "Invalid Input"
+    }
+  },
+  {
+    "input": 399.89,
+    "expected": {
+      "output": {
+        "200": 1,
+        "100": 1,
+        "50": 1,
+        "20": 2,
+        "5": 1,
+        "2": 2,
+        "0.5": 1,
+        "0.2": 1,
+        "0.1": 1,
+        "0.05": 1,
+        "0.02": 2
+      }
+    }
+  }
+]
